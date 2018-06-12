@@ -12,17 +12,18 @@ bash brew_cask.sh
 bash symlink-setup.sh
 
 # Install theme
-rm ~/.oh-my-zsh/custom/themes/powerlevel9k
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+rm -rf ~/.oh-my-zsh/custom/themes/powerlevel9k
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # set up osx defaults
 bash .macos
 
 # Create directories
-mkdir -p ~/Projects ~/Virtualenvs ~/Library/Application\ Support/pip
+mkdir -p ~/Projects ~/Virtualenvs
 
 # Install virtualenv
-source ~/.bashrc
 gpip install virtualenv
 
 # Create a base virtualenv
