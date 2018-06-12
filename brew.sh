@@ -100,5 +100,8 @@ brew install zopfli
 # Install python 3
 brew install python3
 
+# Install transmission
+brew install transmission
+
 # Remove outdated versions from the cellar.
 brew cleanup

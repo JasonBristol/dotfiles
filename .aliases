@@ -152,3 +152,4 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Use python 3
 alias python='python3'
+alias pip='pip3'
