@@ -11,6 +11,9 @@ bash brew_cask.sh
 # symlink it up!
 bash symlink-setup.sh
 
+# Install theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
 # set up osx defaults
 bash .macos
 
