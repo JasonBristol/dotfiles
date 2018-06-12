@@ -53,6 +53,12 @@ npm install -g git-recent
 # sexy git diffs
 npm install -g diff-so-fancy
 
+# angular cli
+npm install -g @angular/cli
+
+# vue cli
+npm install -g @vue/cli
+
 # trash as the safe `rm` alternative
 npm install --global trash-cli
 
