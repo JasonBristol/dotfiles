@@ -1,3 +1,9 @@
+# Install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Run homebrew
+./brew.sh
+
 # set up osx defaults
 sh .macos
 
