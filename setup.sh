@@ -8,11 +8,11 @@ fi
 bash brew.sh
 bash brew_cask.sh
 
-# set up osx defaults
-bash .macos
-
 # symlink it up!
 bash symlink-setup.sh
+
+# set up osx defaults
+bash .macos
 
 # Create directories
 mkdir -p ~/Projects ~/Virtualenvs ~/Library/Application\ Support/pip
