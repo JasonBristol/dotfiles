@@ -2,13 +2,13 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Run homebrew
-sudo bash brew.sh
+bash brew.sh
 
 # set up osx defaults
-sudo bash .macos
+bash .macos
 
 # symlink it up!
-sudo bash symlink-setup.sh
+bash symlink-setup.sh
 
 # Create directories
 mkdir -p ~/Projects ~/Virtualenvs ~/Library/Application\ Support/pip
