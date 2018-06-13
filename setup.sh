@@ -15,14 +15,10 @@ bash brew.sh
 bash brew_cask.sh
 
 # Install theme
-mkdir -p ~/.oh-my-zsh/custom/themes/
-wget -xqO ~/.oh-my-zsh/custom/themes/aphrodite.zsh-theme https://git.io/v5ohc
+wget -xqO ~/.oh-my-zsh/themes/aphrodite.zsh-theme https://git.io/v5ohc
 
 # symlink it up!
 bash symlink-setup.sh
-
-# set up osx defaults
-bash .macos
 
 # Install virtualenv
 source ~/.zshrc
@@ -32,3 +28,6 @@ gpip install virtualenv
 # Create a base virtualenv
 cd ~/Virtualenvs
 virtualenv venv
+
+# set up osx defaults
+bash .macos
