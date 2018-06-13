@@ -1,6 +1,7 @@
 # Apps
 brew cask install transmission
 brew cask install vlc
+brew cask install slack
 
 # Dev
 brew cask install java
@@ -14,3 +15,7 @@ brew cask install visual-studio-code
 
 # Browsers
 brew cask install google-chrome
+
+# Games
+brew cask install battle-net
+brew cask install minecraft

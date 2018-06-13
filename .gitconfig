@@ -61,13 +61,13 @@
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
 	# Git status
-	st = git status
+	st = status
 
 	# Git checkout
-	co = git checkout
+	co = checkout
 
 	# Git branch
-	br = git branch
+	br = branch
 
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
@@ -194,3 +194,6 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = Jason Bristol
+	email = json.bristol@gmail.com

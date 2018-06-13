@@ -16,8 +16,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-# Get a random name
-GODS=("Zeus" "Ares" "Athena" "Aphrodite" "Janus" "Hypnos" "Hades" "Nemesis" "Iris" "Tyche")
+# Get a random roman god name
+GODS=("Juno" "Minerva" "Venus" "Diana" "Vesta" "Ceres" "Jupiter" "Neptune" "Mars" "Vulcan" "Mercury")
 
 # Seed random generator
 RANDOM=$$$(date +%s)
@@ -33,6 +33,10 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 # Change default shell
 chsh -s /bin/zsh
+
+# Disable guest login
+defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
+defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
 
 # Set track speed
 defaults write -g com.apple.trackpad.scaling 7.0
@@ -142,11 +146,11 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent YES
+
 # Show language menu in the top right corner of the boot screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
-
-# Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
 
 ###############################################################################
 # Screen                                                                      #

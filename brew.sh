@@ -97,11 +97,10 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
-# Install python 3
+# Misc
 brew install python3
-
-# Install transmission
 brew install transmission
+brew install tmux
 
 # Remove outdated versions from the cellar.
 brew cleanup

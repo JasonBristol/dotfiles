@@ -1,11 +1,15 @@
+# Create directories
+mkdir -p ~/Projects ~/Virtualenvs
+sudo chown -R jbristol ~/Projects ~/Virtualenvs 
+
 # Install homebrew
 which -s brew
 if [[ $? != 0 ]] ; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Run homebrew
-bash brew.sh
+# Run homebrewJ
+# bash brew.sh
 bash brew_cask.sh
 
 # symlink it up!
@@ -13,17 +17,16 @@ bash symlink-setup.sh
 
 # Install theme
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-rm -rf ~/.oh-my-zsh/custom/themes/powerlevel9k
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+mkdir -p ~/.oh-my-zsh/custom/themes/
+wget -xqO ~/.oh-my-zsh/custom/themes/aphrodite.zsh-theme https://git.io/v5ohc
+sed -i.bak 's/^[[:space:]]*ZSH_THEME=.*/ZSH_THEME="aphrodite"/' ~/.zshrc
+source ~/.zshrc
 
 # set up osx defaults
 bash .macos
 
-# Create directories
-mkdir -p ~/Projects ~/Virtualenvs
-
 # Install virtualenv
+source ~/.bashrc
 gpip install virtualenv
 
 # Create a base virtualenv
