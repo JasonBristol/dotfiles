@@ -1,3 +1,5 @@
+sudo -v
+
 # Create directories
 mkdir -p ~/Projects ~/Virtualenvs
 sudo chown -R jbristol ~/Projects ~/Virtualenvs 
