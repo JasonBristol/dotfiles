@@ -15,7 +15,3 @@ brew cask install visual-studio-code
 
 # Browsers
 brew cask install google-chrome
-
-# Games
-brew cask install battle-net
-brew cask install minecraft
