@@ -92,3 +92,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Start ssh agent
+eval "$(ssh-agent -s)" >> /dev/null
+
+# Add ssh key
+eval "$(ssh-add -q ~/.ssh/id_rsa)" >> /dev/null

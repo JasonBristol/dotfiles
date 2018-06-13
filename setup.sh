@@ -10,7 +10,7 @@ if [[ $? != 0 ]] ; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Run homebrewJ
+# Run homebrew
 bash brew.sh
 bash brew_cask.sh
 
