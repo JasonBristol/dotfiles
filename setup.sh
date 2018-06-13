@@ -9,23 +9,21 @@ if [[ $? != 0 ]] ; then
 fi
 
 # Run homebrewJ
-# bash brew.sh
+bash brew.sh
 bash brew_cask.sh
+
+# Install theme
+mkdir -p ~/.oh-my-zsh/custom/themes/
+wget -xqO ~/.oh-my-zsh/custom/themes/aphrodite.zsh-theme https://git.io/v5ohc
 
 # symlink it up!
 bash symlink-setup.sh
-
-# Install theme
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-mkdir -p ~/.oh-my-zsh/custom/themes/
-wget -xqO ~/.oh-my-zsh/custom/themes/aphrodite.zsh-theme https://git.io/v5ohc
-sed -i.bak 's/^[[:space:]]*ZSH_THEME=.*/ZSH_THEME="aphrodite"/' ~/.zshrc
-source ~/.zshrc
 
 # set up osx defaults
 bash .macos
 
 # Install virtualenv
+source ~/.zshrc
 source ~/.bashrc
 gpip install virtualenv
 

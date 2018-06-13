@@ -35,8 +35,8 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 chsh -s /bin/zsh
 
 # Disable guest login
-defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
-defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
+sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
 
 # Set track speed
 defaults write -g com.apple.trackpad.scaling 7.0
