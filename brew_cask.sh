@@ -12,6 +12,7 @@ brew cask install vagrant
 # IDE/Editors
 brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
+brew cask install sublime-text
 
 # Browsers
 brew cask install google-chrome
