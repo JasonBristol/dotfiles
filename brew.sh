@@ -88,9 +88,17 @@ brew install zopfli
 
 # Misc
 brew install python3
+brew install nodejs
 brew install transmission
 brew install tmux
 brew install zsh
+
+# CF
+brew tap cloudfoundry/tap
+brew install cf-cli
+
+# DBMS
+brew install mongodb
 
 # Remove outdated versions from the cellar.
 brew cleanup

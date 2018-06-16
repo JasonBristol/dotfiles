@@ -9,6 +9,8 @@ brew cask install java
 brew cask install iterm2
 brew cask install virtualbox
 brew cask install vagrant
+brew cask install postman
+brew cask install filezilla
 
 # IDE/Editors
 brew cask install jetbrains-toolbox
