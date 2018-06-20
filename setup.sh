@@ -14,6 +14,9 @@ fi
 bash brew.sh
 bash brew_cask.sh
 
+# Enable dark-mode
+dark-mode on
+
 # Install theme
 wget -xqO ~/.oh-my-zsh/themes/aphrodite.zsh-theme https://git.io/v5ohc
 

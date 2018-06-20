@@ -92,6 +92,7 @@ brew install nodejs
 brew install transmission
 brew install tmux
 brew install zsh
+brew install dark-mode
 
 # CF
 brew tap cloudfoundry/tap
