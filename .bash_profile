@@ -2,7 +2,7 @@
 export PATH="$HOME/bin:$PATH";
 
 # Setup gpg
-# export GPG_TTY=$(tty)
+export GPG_TTY=$(tty)
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

@@ -192,5 +192,6 @@
 [user]
 	name = Jason Bristol
 	email = json.bristol@gmail.com
+	signingkey = C41F1FFB90D8928E
 [commit]
 	gpgsign = true
