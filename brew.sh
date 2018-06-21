@@ -100,6 +100,8 @@ brew install cf-cli
 
 # DBMS
 brew install mongodb
+brew install mysql
+brew install neo4j
 
 # Remove outdated versions from the cellar.
 brew cleanup
