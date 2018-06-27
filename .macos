@@ -34,10 +34,10 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # Change default shell
 chsh -s /bin/zsh
 
-# Disable guest login
-sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool NO
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
-sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
+# Disable guest login (Disabled in favor of find my macbook)
+# sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool NO
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
+# sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
 
 # Set track speed
 defaults write -g com.apple.trackpad.scaling 5.0
