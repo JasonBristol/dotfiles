@@ -3,6 +3,7 @@ brew cask install transmission
 brew cask install vlc
 brew cask install slack
 brew cask install discord
+brew cask install sonic-pi
 
 # Dev
 brew cask install java
