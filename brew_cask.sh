@@ -21,6 +21,9 @@ brew cask install sublime-text
 # Browsers
 brew cask install google-chrome
 
+# VPNs
+brew cask install nordvpn
+
 # Neo4j Dependencies
 brew cask uninstall java
 brew cask install caskroom/versions/java8
