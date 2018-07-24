@@ -32,5 +32,8 @@ gpip install virtualenv
 cd ~/Virtualenvs
 virtualenv venv
 
+# Install sonic-pi-cli
+cargo install --git https://github.com/lpil/sonic-pi-tool/ 
+
 # set up osx defaults
 bash .macos

@@ -88,6 +88,7 @@ brew install zopfli
 
 # Misc
 brew install python3
+brew install rust
 brew install nodejs
 brew install transmission
 brew install tmux
