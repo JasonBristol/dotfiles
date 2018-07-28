@@ -20,6 +20,7 @@ brew cask install sublime-text
 
 # Browsers
 brew cask install google-chrome
+brew cask install torbrowser
 
 # VPNs
 brew cask install nordvpn

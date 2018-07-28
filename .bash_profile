@@ -52,3 +52,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Start ssh agent
 eval "$(ssh-agent -s)"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Load RVM
+source ~/.rvm/scripts/rvm

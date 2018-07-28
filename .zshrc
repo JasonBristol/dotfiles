@@ -109,3 +109,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Add ssh key
 # eval "$(ssh-add -q ~/.ssh/id_rsa)" >> /dev/null
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Load RVM
+source ~/.rvm/scripts/rvm

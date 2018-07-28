@@ -23,6 +23,13 @@ wget -xqO ~/.oh-my-zsh/themes/aphrodite.zsh-theme https://git.io/v5ohc
 # symlink it up!
 bash symlink-setup.sh
 
+# Install sonic-pi-cli
+cargo install --git https://github.com/lpil/sonic-pi-tool/ 
+
+# Setup RVM
+command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+curl -L https://get.rvm.io | bash -s stable --ruby
+
 # Install virtualenv
 source ~/.zshrc
 source ~/.bashrc
@@ -31,9 +38,6 @@ gpip install virtualenv
 # Create a base virtualenv
 cd ~/Virtualenvs
 virtualenv venv
-
-# Install sonic-pi-cli
-cargo install --git https://github.com/lpil/sonic-pi-tool/ 
 
 # set up osx defaults
 bash .macos
