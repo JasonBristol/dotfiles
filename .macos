@@ -6,6 +6,9 @@
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
+# Enable dark mode
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
+
 # Ask for the administrator password upfront
 # sudo -v
 
