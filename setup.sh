@@ -35,9 +35,10 @@ source ~/.zshrc
 source ~/.bashrc
 gpip install virtualenv
 
-# Create a base virtualenv
+# Create base virtualenvs
 cd ~/Virtualenvs
 virtualenv venv
+virtualenv -p $(which python2) py2
 
 # set up osx defaults
 bash .macos
