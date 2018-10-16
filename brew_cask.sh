@@ -18,10 +18,6 @@ brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
 brew cask install sublime-text
 
-# DBMS
-brew cask install mysqlworkbench
-brew cask install pgadmin4
-
 # Browsers
 brew cask install google-chrome
 brew cask install torbrowser
