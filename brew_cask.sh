@@ -6,7 +6,7 @@ brew cask install discord
 brew cask install sonic-pi
 
 # Dev
-brew cask install java
+brew cask install caskroom/versions/java8
 brew cask install iterm2
 brew cask install virtualbox
 brew cask install vagrant
@@ -18,13 +18,13 @@ brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
 brew cask install sublime-text
 
+# DBMS
+brew cask install mysqlworkbench
+brew cask install pgadmin4
+
 # Browsers
 brew cask install google-chrome
 brew cask install torbrowser
 
 # VPNs
 brew cask install nordvpn
-
-# Neo4j Dependencies
-brew cask uninstall java
-brew cask install caskroom/versions/java8
