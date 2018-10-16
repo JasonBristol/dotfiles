@@ -4,6 +4,7 @@ brew cask install vlc
 brew cask install slack
 brew cask install discord
 brew cask install sonic-pi
+brew cask install dropbox
 
 # Dev
 brew cask install caskroom/versions/java8
