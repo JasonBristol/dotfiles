@@ -14,6 +14,7 @@ brew cask install virtualbox
 brew cask install vagrant
 brew cask install postman
 brew cask install filezilla
+brew cask install docker
 
 # IDE/Editors
 brew cask install jetbrains-toolbox
