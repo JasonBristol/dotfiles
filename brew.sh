@@ -90,6 +90,7 @@ brew install zopfli
 brew install python3
 brew install rust
 brew install nodejs
+brew install yarn
 brew install transmission
 brew install tmux
 brew install zsh
