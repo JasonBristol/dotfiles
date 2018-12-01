@@ -10,7 +10,6 @@ brew cask install google-backup-and-sync
 # Dev
 brew cask install caskroom/versions/java8
 brew cask install iterm2
-brew cask install virtualbox
 brew cask install vagrant
 brew cask install postman
 brew cask install filezilla
@@ -19,7 +18,6 @@ brew cask install docker
 # IDE/Editors
 brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
-brew cask install sublime-text
 
 # Browsers
 brew cask install google-chrome

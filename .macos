@@ -479,7 +479,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Show unsupported drives for time machine
-defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1
+# defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1
 
 ###############################################################################
 # Activity Monitor                                                            #
