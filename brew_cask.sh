@@ -22,6 +22,7 @@ brew cask install visual-studio-code
 # Browsers
 brew cask install google-chrome
 brew cask install torbrowser
+brew cask install vivaldi
 
 # VPNs
 brew cask install nordvpn
