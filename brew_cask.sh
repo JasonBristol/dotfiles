@@ -6,6 +6,7 @@ brew cask install discord
 brew cask install sonic-pi
 brew cask install dropbox
 brew cask install google-backup-and-sync
+brew cask install deluge
 
 # Dev
 brew cask install caskroom/versions/java8
