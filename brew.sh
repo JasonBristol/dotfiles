@@ -105,5 +105,19 @@ brew install mysql
 brew install postgresql
 brew install neo4j
 
+# Android dev
+brew install ant
+brew install maven
+brew install gradle
+
+# iOS dev
+brew update
+brew install --HEAD usbmuxd
+brew link usbmuxd
+brew install --HEAD libimobiledevice
+brew install ideviceinstaller
+brew install ios-deploy
+brew install cocoapods
+
 # Remove outdated versions from the cellar.
 brew cleanup

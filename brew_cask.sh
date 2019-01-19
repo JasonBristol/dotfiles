@@ -16,9 +16,14 @@ brew cask install postman
 brew cask install filezilla
 brew cask install docker
 
+# Android dev
+brew cask install android-sdk
+brew cask install android-ndk
+
 # IDE/Editors
 brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
+brew cask install android-studio
 
 # Browsers
 brew cask install google-chrome

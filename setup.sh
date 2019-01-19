@@ -29,7 +29,6 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 
 # Install virtualenv
 source ~/.zshrc
-source ~/.bashrc
 gpip install virtualenv
 
 # Create base virtualenvs
@@ -37,5 +36,15 @@ cd ~/Virtualenvs
 virtualenv venv
 virtualenv -p $(which python2) py2
 
-# set up osx defaults
+# Setup cocoa pods
+# TODO broken ruby version
+pod setup
+
+# Setup flutter
+git clone -b v1.1.4 https://github.com/flutter/flutter.git ~/Documents/flutter --single-branch
+source ~/.zshrc
+flutter doctor --android-licenses
+flutter doctor
+
+# Setup osx defaults
 bash .macos

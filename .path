@@ -2,3 +2,12 @@ export PATH="/usr/local/bin:$PATH"
 
 # Make sure coreutils are loaded before system commands
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+# Add rust cargo to path
+export PATH=$PATH:~/.cargo/bin
+
+# Setup flutter
+export PATH=~/Documents/flutter/bin:$PATH
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

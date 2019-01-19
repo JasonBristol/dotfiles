@@ -13,4 +13,5 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
-.vscode/
+# For now, will be actually leveraging this later
+.vscode

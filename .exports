@@ -32,3 +32,8 @@ export MANPAGER='less -X';
 # Avoid issues with `gpg` as installed via Homebrew.
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
+
+# Android dev
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
