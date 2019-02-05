@@ -97,6 +97,10 @@ brew install transmission
 brew install tmux
 brew install zsh
 
+# Julia
+brew tap staticfloat/julia
+brew install julia
+
 # CF
 brew tap cloudfoundry/tap
 brew install cf-cli
