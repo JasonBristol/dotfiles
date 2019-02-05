@@ -90,6 +90,7 @@ brew install zopfli
 brew install python3
 brew install rust
 brew install nodejs
+brew install golang
 brew install erlang
 brew install elixir
 brew install yarn
