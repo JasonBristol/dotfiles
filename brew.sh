@@ -93,6 +93,7 @@ brew install nodejs
 brew install golang
 brew install erlang
 brew install elixir
+brew install clojure
 brew install r
 brew install yarn
 brew install transmission
