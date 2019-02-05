@@ -98,6 +98,7 @@ brew install yarn
 brew install transmission
 brew install tmux
 brew install zsh
+brew install icarus-verilog
 
 # Julia
 brew tap staticfloat/julia
