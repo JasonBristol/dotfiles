@@ -89,7 +89,6 @@ brew install zopfli
 # Misc
 brew install python3
 brew install rust
-brew install nodejs
 brew install golang
 brew install erlang
 brew install elixir
@@ -100,6 +99,8 @@ brew install transmission
 brew install tmux
 brew install zsh
 brew install icarus-verilog
+brew install node
+brew install watchman
 
 # Julia
 brew tap staticfloat/julia

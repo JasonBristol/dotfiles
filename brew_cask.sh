@@ -25,6 +25,9 @@ brew cask install android-ndk
 brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
 
+# Debuggers
+brew cask install react-native-debugger
+
 # Browsers
 brew cask install google-chrome
 brew cask install torbrowser
