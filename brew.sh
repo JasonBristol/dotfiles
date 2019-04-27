@@ -101,6 +101,7 @@ brew install zsh
 brew install icarus-verilog
 brew install node
 brew install watchman
+brew install yank
 
 # Julia
 brew tap staticfloat/julia
