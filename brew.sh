@@ -104,6 +104,7 @@ brew install watchman
 brew install yank
 brew install fasd
 brew install lnav
+brew install peco
 
 # Julia
 brew tap staticfloat/julia
