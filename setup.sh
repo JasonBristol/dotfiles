@@ -2,7 +2,7 @@ sudo -v
 
 # Create directories
 mkdir -p ~/Projects ~/Virtualenvs
-sudo chown -R jbristol ~/Projects ~/Virtualenvs 
+sudo chown -R jbristol ~/Projects ~/Virtualenvs
 
 # Install homebrew
 which -s brew
@@ -21,7 +21,7 @@ wget -xqO ~/.oh-my-zsh/themes/aphrodite.zsh-theme https://git.io/v5ohc
 bash symlink-setup.sh
 
 # Install sonic-pi-cli
-cargo install --git https://github.com/lpil/sonic-pi-tool/ 
+cargo install --git https://github.com/lpil/sonic-pi-tool/
 
 # Setup RVM
 command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
@@ -45,6 +45,9 @@ git clone -b v1.1.4 https://github.com/flutter/flutter.git ~/Documents/flutter -
 source ~/.zshrc
 flutter doctor --android-licenses
 flutter doctor
+
+# Setup setting backup
+mackup backup -f
 
 # Setup osx defaults
 bash .macos
