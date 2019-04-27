@@ -105,6 +105,7 @@ brew install yank
 brew install fasd
 brew install lnav
 brew install peco
+brew install ncdu
 
 # Julia
 brew tap staticfloat/julia
