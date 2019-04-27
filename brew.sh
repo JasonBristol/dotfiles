@@ -102,6 +102,7 @@ brew install icarus-verilog
 brew install node
 brew install watchman
 brew install yank
+brew install fasd
 
 # Julia
 brew tap staticfloat/julia
