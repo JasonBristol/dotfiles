@@ -103,6 +103,7 @@ brew install node
 brew install watchman
 brew install yank
 brew install fasd
+brew install lnav
 
 # Julia
 brew tap staticfloat/julia
