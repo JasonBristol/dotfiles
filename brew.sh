@@ -108,6 +108,9 @@ brew install peco
 brew install ncdu
 brew install mackup
 
+# NVM
+brew install nvm
+
 # Julia
 brew tap staticfloat/julia
 brew install julia
