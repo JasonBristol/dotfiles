@@ -7,6 +7,7 @@ brew cask install sonic-pi
 brew cask install dropbox
 brew cask install google-backup-and-sync
 brew cask install deluge
+brew cask install lmms
 
 # Dev
 brew cask install caskroom/versions/java8
