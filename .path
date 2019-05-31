@@ -1,5 +1,5 @@
 export PATH="/usr/local/bin:$PATH"
-export PATH=$PATH:~/.local/bin
+export PATH=~/.local/bin:$PATH
 
 # Make sure coreutils are loaded before system commands
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"

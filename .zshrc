@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -8,9 +8,9 @@ export ZSH=$HOME/.oh-my-zsh
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,exports,aliases,functions,extra}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
+	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+unset file
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -67,7 +67,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+	git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,8 +106,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Add ssh key
 # eval "$(ssh-add -q ~/.ssh/id_rsa)" >> /dev/null
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 # Load RVM
 source ~/.rvm/scripts/rvm
@@ -123,3 +121,6 @@ export NVM_DIR="$HOME/.nvm"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
+
+# Dedup PATH safely
+ddpath

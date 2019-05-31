@@ -107,6 +107,7 @@ brew install lnav
 brew install peco
 brew install ncdu
 brew install mackup
+brew install shfmt
 
 # Haskell
 curl https://get-ghcup.haskell.org -sSf | sh
