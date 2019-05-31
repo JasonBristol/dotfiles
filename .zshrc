@@ -112,6 +112,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Load RVM
 source ~/.rvm/scripts/rvm
 
+# Load Haskell
+source ~/.ghcup/env
+
 # Load NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"

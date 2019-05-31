@@ -54,3 +54,6 @@ eval "$(ssh-agent -s)"
 
 # Load RVM
 source ~/.rvm/scripts/rvm
+
+# Load Haskell
+source ~/.ghcup/env

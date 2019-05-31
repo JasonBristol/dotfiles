@@ -108,6 +108,10 @@ brew install peco
 brew install ncdu
 brew install mackup
 
+# Haskell
+curl https://get-ghcup.haskell.org -sSf | sh
+curl -sSL https://get.haskellstack.org/ | sh
+
 # NVM
 brew install nvm
 
