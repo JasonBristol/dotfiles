@@ -8,9 +8,13 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Save Homebrew’s installed location.
+BREW_PREFIX=$(brew --prefix)
+
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
+ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -33,7 +37,8 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
+brew install php
+brew install gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
