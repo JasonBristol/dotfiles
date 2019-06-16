@@ -74,6 +74,7 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
+brew install openapi-generator
 
 # Install exiv2
 brew install git
