@@ -17,6 +17,7 @@ brew cask install postman
 brew cask install filezilla
 brew cask install docker
 brew cask install dotnet-sdk
+brew cask install mysqlworkbench
 
 # Android dev
 brew cask install android-sdk
