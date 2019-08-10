@@ -148,7 +148,6 @@ brew link usbmuxd
 brew install --HEAD libimobiledevice
 brew install ideviceinstaller
 brew install ios-deploy
-brew install cocoapods
 
 # Remove outdated versions from the cellar.
 brew cleanup

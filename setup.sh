@@ -39,8 +39,8 @@ cd ~/Virtualenvs
 virtualenv venv
 virtualenv -p $(which python2) py2
 
-# Setup cocoa pods
-# TODO broken ruby version
+# Install cocoapods
+gem install cocoapods
 pod setup
 
 # Setup flutter
