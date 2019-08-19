@@ -122,10 +122,6 @@ curl -sSL https://get.haskellstack.org/ | sh
 # NVM
 brew install nvm
 
-# Julia
-brew tap staticfloat/julia
-brew install julia
-
 # CF
 brew tap cloudfoundry/tap
 brew install cf-cli

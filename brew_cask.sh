@@ -18,6 +18,7 @@ brew cask install filezilla
 brew cask install docker
 brew cask install dotnet-sdk
 brew cask install mysqlworkbench
+brew cask install julia
 
 # Android dev
 brew cask install android-sdk
