@@ -14,7 +14,7 @@ brew cask install caskroom/versions/java8
 brew cask install iterm2
 brew cask install vagrant
 brew cask install postman
-brew cask install filezilla
+brew cask install cyberduck
 brew cask install docker
 brew cask install dotnet-sdk
 brew cask install mysqlworkbench
