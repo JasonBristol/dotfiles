@@ -15,6 +15,7 @@ brew cask install iterm2
 brew cask install vagrant
 brew cask install postman
 brew cask install cyberduck
+brew cask install wireshark
 brew cask install docker
 brew cask install dotnet-sdk
 brew cask install mysqlworkbench
