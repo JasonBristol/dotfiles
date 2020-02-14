@@ -100,6 +100,7 @@ brew install erlang
 brew install elixir
 brew install clojure
 brew install r
+brew install nim
 brew install yarn
 brew install transmission
 brew install tmux
