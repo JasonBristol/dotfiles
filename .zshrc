@@ -107,9 +107,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Add ssh key
 # eval "$(ssh-add -q ~/.ssh/id_rsa)" >> /dev/null
 
-# Load RVM
-source ~/.rvm/scripts/rvm
-
 # Load Haskell
 source ~/.ghcup/env
 
@@ -124,3 +121,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Dedup PATH safely
 ddpath
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

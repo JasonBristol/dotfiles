@@ -23,10 +23,6 @@ bash symlink-setup.sh
 # Install sonic-pi-cli
 cargo install --git https://github.com/lpil/sonic-pi-tool/
 
-# Setup RVM
-command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-curl -L https://get.rvm.io | bash -s stable --ruby
-
 # Setup NVM
 mkdir ~/.nvm
 

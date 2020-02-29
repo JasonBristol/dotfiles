@@ -10,5 +10,5 @@ export PATH=$PATH:~/.cargo/bin
 # Setup flutter
 export PATH=~/Documents/flutter/bin:$PATH
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Add GraalVM to path
+export PATH="$PATH:/Library/Java/JavaVirtualMachines/graalvm-ce-java8-19.3.0/Contents/Home/bin"
