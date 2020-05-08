@@ -3,7 +3,6 @@
 # Make vim the default editor.
 export EDITOR='vim';
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Enable persistent REPL history for `node`.
