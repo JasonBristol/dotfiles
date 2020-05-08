@@ -75,8 +75,6 @@ brew install xz
 # Install other useful binaries.
 brew install ack
 brew install openapi-generator
-
-# Install exiv2
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
@@ -90,8 +88,26 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+brew install yarn
+brew install nvm
+brew install tmux
+brew install icarus-verilog
+brew install watchman
+brew install yank
+brew install fasd
+brew install lnav
+brew install peco
+brew install ncdu
+brew install shfmt
+brew install mackup
+# Cloud Foundry
+brew tap cloudfoundry/tap
+brew install cf-cli
 
-# Misc
+# Shells
+brew install zsh
+
+# Languages
 brew install lua
 brew install python3
 brew install rust
@@ -101,30 +117,10 @@ brew install elixir
 brew install clojure
 brew install r
 brew install nim
-brew install yarn
-brew install tmux
-brew install zsh
-brew install icarus-verilog
 brew install node
-brew install watchman
-brew install yank
-brew install fasd
-brew install lnav
-brew install peco
-brew install ncdu
-brew install mackup
-brew install shfmt
-
 # Haskell
 brew install ghc
 brew install haskell-stack
-
-# NVM
-brew install nvm
-
-# CF
-brew tap cloudfoundry/tap
-brew install cf-cli
 
 # DBMS
 brew install mongodb
