@@ -80,7 +80,6 @@ brew install openapi-generator
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
-brew install lua
 brew install lynx
 brew install p7zip
 brew install pigz
@@ -93,6 +92,7 @@ brew install vbindiff
 brew install zopfli
 
 # Misc
+brew install lua
 brew install python3
 brew install rust
 brew install golang
@@ -117,8 +117,8 @@ brew install mackup
 brew install shfmt
 
 # Haskell
-curl https://get-ghcup.haskell.org -sSf | sh
-curl -sSL https://get.haskellstack.org/ | sh
+brew install ghc
+brew install haskell-stack
 
 # NVM
 brew install nvm

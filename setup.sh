@@ -36,7 +36,7 @@ virtualenv venv
 virtualenv -p $(which python2) py2
 
 # Install cocoapods
-gem install cocoapods
+sudo gem install -n /usr/local/bin cocoapods
 pod setup
 
 # Setup flutter
