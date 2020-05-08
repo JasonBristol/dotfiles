@@ -4,4 +4,4 @@ osx_image: xcode11
 install:
 - git clone --single-branch --branch dev https://github.com/JasonBristol/dotfiles.git
 - cd dotfiles
-- sudo bash setup.sh
+- bash setup.sh
