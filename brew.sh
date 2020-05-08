@@ -132,6 +132,7 @@ brew install mongodb
 brew install mysql
 brew install postgresql
 brew install neo4j
+brew install redis
 
 # Android dev
 brew install ant
