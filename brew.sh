@@ -102,7 +102,6 @@ brew install clojure
 brew install r
 brew install nim
 brew install yarn
-brew install transmission
 brew install tmux
 brew install zsh
 brew install icarus-verilog
