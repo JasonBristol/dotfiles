@@ -7,7 +7,7 @@ brew cask install dropbox
 brew cask install google-backup-and-sync
 brew cask install folx
 brew cask install lmms
-brew cask install adoptopenjdk
+brew cask install adoptopenjdk --no-quarantine
 brew cask install iterm2
 brew cask install vagrant
 brew cask install postman
