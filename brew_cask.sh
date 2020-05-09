@@ -26,7 +26,7 @@ brew cask install react-native-debugger
 
 # Browsers
 brew cask install google-chrome
-brew cask install torbrowser
+brew cask install tor-browser
 brew cask install vivaldi
 
 # VPNs
