@@ -39,3 +39,6 @@ export GPG_TTY=$(tty);
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+
+# RBENV
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"

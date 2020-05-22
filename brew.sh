@@ -110,7 +110,6 @@ brew install zsh
 # Languages
 brew install lua
 brew install python3
-brew install rust
 brew install golang
 brew install erlang
 brew install elixir
@@ -118,6 +117,10 @@ brew install clojure
 brew install r
 brew install nim
 brew install node
+brew install deno
+# Rust
+brew install rust
+brew install rustup
 # Haskell
 brew install ghc
 brew install haskell-stack

@@ -122,5 +122,8 @@ export NVM_DIR="$HOME/.nvm"
 # Dedup PATH safely
 ddpath
 
+# Start rbenv
+eval "$(rbenv init -)"
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
