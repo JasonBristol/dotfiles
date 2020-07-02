@@ -23,10 +23,10 @@ brew install moreutils
 brew install findutils
 
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`.
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 # brew install pinentry-mac
@@ -77,7 +77,7 @@ brew install ack
 brew install openapi-generator
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lynx
 brew install p7zip
 brew install pigz
@@ -145,6 +145,3 @@ brew link usbmuxd
 brew install --HEAD libimobiledevice
 brew install ideviceinstaller
 brew install ios-deploy
-
-# Remove outdated versions from the cellar.
-brew cleanup
