@@ -195,3 +195,5 @@
 	signingkey = C41F1FFB90D8928E
 [commit]
 	gpgsign = true
+[pull]
+	ff = only

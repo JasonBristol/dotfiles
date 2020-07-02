@@ -100,6 +100,7 @@ brew install peco
 brew install ncdu
 brew install shfmt
 brew install mackup
+brew install thefuck
 # Cloud Foundry
 brew tap cloudfoundry/tap
 brew install cf-cli
