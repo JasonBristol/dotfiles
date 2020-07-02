@@ -18,7 +18,7 @@ bash brew_cask.sh
 wget -xqO ~/.oh-my-zsh/themes/aphrodite.zsh-theme https://git.io/v5ohc
 
 # symlink it up!
-bash symlink-setup.sh
+bash bootstrap.sh
 
 # Install sonic-pi-cli
 cargo install --git https://github.com/lpil/sonic-pi-tool/
