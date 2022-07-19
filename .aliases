@@ -152,4 +152,4 @@ alias python='python3'
 alias pip='pip3'
 
 # React Native
-alias rn='react-native'
+alias rn='npx react-native'

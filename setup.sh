@@ -35,6 +35,9 @@ cd ~/Virtualenvs
 virtualenv venv
 virtualenv -p $(which python2) py2
 
+# Install poetry
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
 # Install cocoapods
 sudo gem install -n /usr/local/bin cocoapods
 pod setup
