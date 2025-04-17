@@ -108,6 +108,7 @@ brew install peco
 brew install ncdu
 brew install mackup
 brew install shfmt
+brew install magic-wormhole
 
 # Haskell
 curl https://get-ghcup.haskell.org -sSf | sh
