@@ -15,3 +15,5 @@ Thumbs.db
 
 # For now, will be actually leveraging this later
 .vscode
+
+**/.claude/settings.local.json
