@@ -1,33 +1,33 @@
-# Apps
-brew cask install vlc
-brew cask install slack
-brew cask install discord
-brew cask install sonic-pi
-brew cask install dropbox
-brew cask install google-backup-and-sync
-brew cask install folx
-brew cask install lmms
-brew cask install adoptopenjdk --no-quarantine
-brew cask install iterm2
-brew cask install vagrant
-brew cask install postman
-brew cask install wireshark
-brew cask install docker
-brew cask install dotnet-sdk
-brew cask install mysqlworkbench
-brew cask install julia
+#!/usr/bin/env bash
+set -euo pipefail
 
-# IDE/Editors
-brew cask install jetbrains-toolbox
-brew cask install visual-studio-code
+# Apps
+brew install --cask vlc
+brew install --cask slack
+brew install --cask discord
+brew install --cask sonic-pi
+brew install --cask dropbox
+brew install --cask google-drive
+brew install --cask iterm2
+brew install --cask vagrant
+brew install --cask postman
+brew install --cask wireshark
+brew install --cask docker
+brew install --cask dotnet-sdk
+brew install --cask mysqlworkbench
+brew install --cask julia
+
+# IDE / Editors
+brew install --cask jetbrains-toolbox
+brew install --cask visual-studio-code
 
 # Debuggers
-brew cask install react-native-debugger
+brew install --cask react-native-debugger
 
 # Browsers
-brew cask install google-chrome
-brew cask install tor-browser
-brew cask install vivaldi
+brew install --cask google-chrome
+brew install --cask tor-browser
+brew install --cask vivaldi
 
 # VPNs
-brew cask install nordvpn
+brew install --cask nordvpn

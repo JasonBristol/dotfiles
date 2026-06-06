@@ -1,47 +1,59 @@
 #!/usr/bin/env bash
 
-# Make vim the default editor.
-export EDITOR='vim';
+# Default editor
+export EDITOR='vim'
 
-export PATH=$JAVA_HOME/bin:$PATH
+# Java (asdf sets JAVA_HOME dynamically; only prepend if set)
+[ -n "${JAVA_HOME:-}" ] && export PATH="$JAVA_HOME/bin:$PATH"
 
-# Enable persistent REPL history for `node`.
-export NODE_REPL_HISTORY=~/.node_history;
-# Allow 32³ entries; the default is 1000.
-export NODE_REPL_HISTORY_SIZE='32768';
-# Use sloppy mode by default, matching web browsers.
-export NODE_REPL_MODE='sloppy';
+# Node REPL
+export NODE_REPL_HISTORY="$HOME/.node_history"
+export NODE_REPL_HISTORY_SIZE='32768'
+export NODE_REPL_MODE='sloppy'
 
-# Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
-export PYTHONIOENCODING='UTF-8';
+# Python
+export PYTHONIOENCODING='UTF-8'
 
-# Increase Bash history size. Allow 32³ entries; the default is 500.
-export HISTSIZE='32768';
-export HISTFILESIZE="${HISTSIZE}";
-# Omit duplicates and commands that begin with a space from history.
-export HISTCONTROL='ignoreboth';
+# History (bash; zsh uses setopt in .zshrc)
+export HISTSIZE='32768'
+export HISTFILESIZE="$HISTSIZE"
+export HISTCONTROL='ignoreboth'
 
-# Prefer US English and use UTF-8.
-export LANG='en_US.UTF-8';
-export LC_ALL='en_US.UTF-8';
+# Locale
+export LANG='en_US.UTF-8'
+export LC_ALL='en_US.UTF-8'
 
-# Highlight section titles in manual pages.
-export LESS_TERMCAP_md="${yellow}";
+# Manpage highlighting (fallback to yellow via tput if $yellow unset)
+export LESS_TERMCAP_md="${yellow:-$(tput setaf 3 2>/dev/null || true)}"
 
-# Don’t clear the screen after quitting a manual page.
-export MANPAGER='less -X';
+# Don’t clear screen after quit
+export MANPAGER='less -X'
 
-# Avoid issues with `gpg` as installed via Homebrew.
-# https://stackoverflow.com/a/42265848/96656
-export GPG_TTY=$(tty);
+# gpg fix
+export GPG_TTY="$(tty)"
 
-# Hide the “default interactive shell is now zsh” warning on macOS.
-export BASH_SILENCE_DEPRECATION_WARNING=1;
+# Hide bash deprecation warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# Android dev
-export ANDROID_HOME=~/Library/Android/sdk
-export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
-export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+# -------- Architecture-aware Homebrew prefix ---------------------------------
+# Intel = /usr/local, Apple Silicon = /opt/homebrew
+if [[ "$(uname -m)" == "arm64" ]]; then
+  __BREW_PREFIX="/opt/homebrew"
+else
+  __BREW_PREFIX="/usr/local"
+fi
+# If brew is available, prefer its dynamic prefix
+if command -v brew >/dev/null 2>&1; then
+  __BREW_PREFIX="$(brew --prefix 2>/dev/null || echo "$__BREW_PREFIX")"
+fi
 
-# RBENV
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+# Android dev (keep your values; only the Homebrew-based paths vary by arch)
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_NDK_HOME="$__BREW_PREFIX/opt/android-ndk"
+export ANDROID_SDK_ROOT="$__BREW_PREFIX/share/android-sdk"
+
+# Ruby build flags (openssl@3 is the current Homebrew default for Ventura+)
+__OPENSSL_PREFIX="$( (brew --prefix openssl@3 2>/dev/null) || echo "$__BREW_PREFIX/opt/openssl@3" )"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=${__OPENSSL_PREFIX}"
+
+unset __BREW_PREFIX __OPENSSL_PREFIX

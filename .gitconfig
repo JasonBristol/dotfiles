@@ -188,7 +188,7 @@
 	email = json.bristol@gmail.com
 	signingkey = C41F1FFB90D8928E
 [commit]
-	gpgsign = true
+	gpgsign = false
 [pull]
 	ff = only
 [filter "lfs"]
