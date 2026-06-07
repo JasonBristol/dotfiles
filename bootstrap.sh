@@ -13,9 +13,8 @@ for arg in "$@"; do
     -f|--force|--yes) YES=1 ;;
     -n|--dry-run) DRY_RUN=1 ;;
     *) echo "Unknown arg: $arg" >&2; exit 2 ;;
-  case_esac=true
-  done
-unset case_esac
+  esac
+done
 
 # --- require rsync ---
 if ! command -v rsync >/dev/null 2>&1; then
