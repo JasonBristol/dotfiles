@@ -48,7 +48,17 @@ alias sudo='sudo '
 alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; npm install npm -g; npm update -g; sudo gem update -n /usr/local/bin --system; sudo gem update -n /usr/local/bin; sudo gem cleanup -n /usr/local/bin'
+# Runs all 4 package managers in parallel; sudo -v caches credentials before forking
+function update() {
+  sudo -v
+  sudo softwareupdate -i -a &
+  (brew update && brew upgrade) &
+  (npm install npm -g && npm update -g) &
+  (sudo gem update -n /usr/local/bin --system --no-document \
+    && sudo gem update -n /usr/local/bin --no-document \
+    && sudo gem cleanup -n /usr/local/bin) &
+  wait
+}
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
